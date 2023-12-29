@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo de Carrinho de Compras</title>
+</head>
+
+<body>
+    
+    
+    <div id="cart-container">
+        <div id="cart-content">
+            <!-- Carrinho de Compras Flutuante --><h1>Carrinho de Compras:</h1>
+            <div id="carrinho"> </div>
+            <div id="mais">
+                <p>
+                    ENDEREÇO: <br> <input type="text" value="">
+                </p>
+                <p>
+                    COMPLEMENTO: <br> <input type="text" value="">
+                </p>
+                <p>FORMA DE PAGAMENTO: <br> 
+                    <input type="radio" name="forma" id="pix">
+                    <label for="pix">PIX</label>
+                    <input type="radio" name="forma" id="car">
+                    <label for="car">Cartão</label>
+                    <input type="radio" name="forma" id="din">
+                    <label for="din">Dinheiro</label>
+                </p>
+            </div>
+        </div>    
+        <button id="botaoex" onclick="limparCarrinho()">Limpar Carrinho</button>
+        <button id="botaoex" onclick="exibirConteudoCarrinhoNoWhatsApp()">Enviar para o WhatsApp</button>
+    </div>    
+
+    <!-- Conteúdo principal com botões de adicionar ao carrinho -->
+    <div id="conteudo">
+
+        <div id="cart-toggle" onclick="toggleCart()">🛒<span id="cart-count">0</span></div>
+
+
+        <button onclick="adicionarAoCarrinho('X-BURGUER')">X-BURGUER</button>
+        <button onclick="adicionarAoCarrinho('X-SALADA')">X-SALADA</button>
+        <button onclick="adicionarAoCarrinho('X-SALADA DUPLO')">X-SALADA DUPLO</button>
+        <button onclick="adicionarAoCarrinho('X-BACON')">X-BACON</button>
+        <button onclick="adicionarAoCarrinho('X-BACON COM CHEDDAR')">X-BACON COM CHEDDAR</button>
+        <button onclick="adicionarAoCarrinho('X-CALABRESA')">X-CALABRESA</button>
+        <button onclick="adicionarAoCarrinho('X-CALABRESA CATUPIRY')">X-CALABRESA CATUPIRY</button>
+        <button onclick="adicionarAoCarrinho('X-FRANGO')">X-FRANGO</button>
+
+        
+
+        <!-- Botão para exibir o conteúdo do carrinho -->
+        <button onclick="exibirConteudoCarrinho()">Mostrar pedido</button>
+
+        <!-- Botão para enviar o conteúdo do carrinho para o WhatsApp -->
+        
+    </div>
+
+    <div id="pedido">
+
+    </div>
+
+    <div id="urlwhats">
+
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

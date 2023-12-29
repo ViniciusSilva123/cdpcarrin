@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*body {
+  background-color: rgb(33, 33, 33);
+}*/
+
+
+
+/*carrinho-contêiner*/
+#cart-container {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Inicialmente, o carrinho está fora da tela */
+  width: 400px;
+  height: 100%;
+  background-color: orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.435);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  
+  border: 1px solid black;
+}
+
+#cart-container #botaoex {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/*conteúdo do carrinho*/
+#cart-content {
+  height: 650px;
+  margin: 10px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+/*alternar carrinho*/
+#cart-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+/*contagem de carrinhos*/
+#cart-count {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para o carrinho flutuante */
+#carrinho {
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: auto;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Ajuste de margem para deixar espaço para o carrinho flutuante */
+#conteudo {
+  margin-right: 200px;
+}
+
+#conteudo button {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px;
+  
+}
+
+/* Estilos para cada item no carrinho */
+.item-no-carrinho {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para o botão de remover */
+.remover-botao {
+  margin-left: 5px;
+}
+
+
+#mais {
+  color: white;
+}
+
+#mais input {
+  margin: 10px;
+}
+
+
+
+#pedido {
+  color: orange;
+}
